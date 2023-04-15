@@ -38,7 +38,6 @@ function saludo(idioma) {
    // Si "idioma" es "ingles", devuelve "Hello!".
    // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
    // Tu código:
-   let introducirIdioma = idioma;
    if (idioma === 'aleman') return 'Guten Tag!';
    else if (idioma === 'mandarin') return 'Ni Hao!';
    else if (idioma === 'ingles') return 'Hello!';
@@ -58,13 +57,9 @@ function colors(color) {
    switch (color) {
       case 'blue':
          return 'This is blue';
-         break;
       case 'red': return 'This is red';
-         break;
       case 'green': return 'This is green';
-         break;
       case 'orange': return 'This is orange';
-         break;
       default: return 'Color not found';
    }
 }
@@ -144,20 +139,20 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   for (let i = 2; i <= num; i++) {
+  for (let i = 2; i <= num/2; i++) {
       if (num % i === 1) {
          return true;
-      }
-   } return false;
+      } return false;
+   }
 }
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
-   if (valor = true) {
-      return 'Soy verdadero';
+   if (valor === true) {
+      return 'Soy verdadero'
       } else {
-         return 'Soy falso';
+      return 'Soy falso'
       }
 }
 
